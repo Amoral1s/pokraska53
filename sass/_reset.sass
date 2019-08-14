@@ -1,0 +1,94 @@
+@font-face 
+	font-family: 'MullerRegular'
+	font-display: swap
+	src: url('../fonts/MullerRegular.ttf')
+	font-weight: normal
+	font-style: normal
+
+@font-face 
+	font-family: 'MullerBold'
+	font-display: swap
+	src: url('../fonts/MullerBold.ttf')
+	font-weight: normal
+	font-style: normal
+
+$reg: "MullerRegular", sans-serif
+$bold: "MullerBold", sans-serif
+$main: #005e9c
+$light: #eeda00
+$accent: rgb(184, 214, 32)
+
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	transition: all 0.6s
+
+body
+	overflow-x: hidden
+body, html
+	margin: 0
+	padding: 0
+	width: auto
+	height: auto
+	color: #ffffff
+	font-family: $reg
+	background-color: #fff
+	box-sizing: border-box
+	font-size: 16px
+	-ms-overflow-style: scrollbar
+
+a, a:hover, a:active, a:link, a:focus
+	color: #000
+	text-decoration: none
+
+ol, ul 
+	list-style: none
+	font-size: 18px
+
+div, span, article, nav, section,main, header
+	box-sizing: border-box
+	padding: 0
+	margin: 0
+
+h1, h2, h3, h4, h5
+	font-size: 30px
+	width: 100%
+	padding-left: 15px
+	padding-right: 15px
+	font-family: $bold
+
+.container 
+	width: 100%
+	padding-right: 15px
+	padding-left: 15px
+	margin-right: auto
+	margin-left: auto
+
+.container-fluid 
+  width: 100%
+  margin-right: auto
+  margin-left: auto
+
+.row 
+  display: flex
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  align-items: center
+@media (min-width: 576px) 
+  .container 
+    max-width: 540px
+		
+
+@media (min-width: 768px) 
+  .container 
+    max-width: 720px
+
+@media (min-width: 992px) 
+  .container 
+    max-width: 960px
+
+@media (min-width: 1200px) 
+  .container 
+    max-width: 1140px 
+

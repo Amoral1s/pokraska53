@@ -1,0 +1,286 @@
+@import "reset"
+.button
+  background-color: $light
+  border: none
+  width: 280px
+  border-radius: 50px
+  padding: 25px 0 21px 0
+  text-transform: uppercase
+  font-family: $bold
+  font-size: 20px
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.5)
+  cursor: pointer
+  &:focus
+    outline: none
+  &:hover
+    background-color: $main
+    color: #fff
+    box-shadow: 2px 2px 15px rgba( #fff, 0.5)
+    a
+      color: #fff
+.header
+  background-image: url(../img/bg-header.png)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: right top
+  min-height: 700px
+  &-title
+    min-height: 600px
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    flex-direction: column
+    &-btn
+      margin-top: 30px
+      width: 100%
+      button
+        margin-right: 40px
+    &-text
+      padding: 0
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: flex-start
+      text-transform: uppercase
+      font-size: 58px
+      strong
+        font-size: 48px
+      span
+        font-size: 34px
+        text-transform: none
+  &-nav
+    display: flex
+    width: 100%
+    background-color: $main
+    height: 100px
+    justify-content: center
+    align-items: center
+    &-wrap
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &-link
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      a
+        color: #fff
+        font-size: 18px
+        position: relative
+        &:hover
+          color: $light
+        &:first-child
+          margin-bottom: 12px
+          font-family: $bold
+          &:after
+            position: absolute
+            height: 30px
+            width: 30px
+            content: ''
+            left: -35px
+            top: -10px
+            background-image: url(../img/nav.png)
+            background-repeat: no-repeat
+            background-size: contain
+        &:last-child
+          font-size: 20px
+          &:after
+            position: absolute
+            height: 25px
+            width: 25px
+            content: ''
+            left: -35px
+            top: 0
+            background-image: url(../img/call.png)
+            background-repeat: no-repeat
+            background-size: contain
+          
+        
+  &-row
+    justify-content: space-between
+    padding: 10px 0
+  &-logo
+    flex-basis: 30%
+    z-index: 15
+    img
+      height: 100px
+      
+/* секция top под шапкой */
+
+.top
+  color: #000
+  margin-top: 50px
+  position: relative
+  &-car
+    position: absolute
+    right: 0
+    top: 0
+    height: 100%
+  &-form
+    width: 100%
+    margin: 30px auto
+    padding: 0
+    margin-bottom: 50px
+    input
+      border-radius: 50px 0 0 50px
+      padding: 15px
+      width: 500px
+      font-size: 18px
+      border: none
+      background-color: rgba(0,0,0,0.3)
+      color: #fff
+      padding-left: 30px
+      box-shadow: -5px 0px 20px rgba(0,0,0,0.2)
+      &::-webkit-input-placeholder
+        color: #fff
+      &:focus
+        outline: none
+    button
+      background-color: $main
+      border: none
+      font-size: 18px
+      color: $light
+      border-radius: 0 50px 50px 0
+      width: 300px
+      padding: 15px
+      margin-left: -3px
+      text-transform: uppercase
+      cursor: pointer
+      box-shadow: 5px 0px 10px rgba(0,0,0,0.2)
+      font-weight: 500
+      &:hover
+        background-color: $light
+        color: #000
+  &-text
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    padding: 0
+    span
+      margin: 5px 0
+      font-family: $bold   
+      font-size: 22px
+
+/* секция content */
+
+.content
+  background-image: url(../img/bg-content.png)
+  min-height: 700px
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: bottom
+  padding: 50px 0
+  &-in
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    justify-content: space-around
+    flex-basis: 100%
+    &-img
+      position: relative
+      display: flex
+      align-items: center
+      flex-basis: 100%
+      justify-content: flex-start
+      flex-wrap: wrap
+      width: 45%
+      min-height: 120px
+      font-size: 20px
+      line-height: 26px
+      font-family: $bold
+      img
+        position: absolute
+        height: 90px
+        margin: 15px auto 
+        left: -160px
+        top: 50%
+        transform: translateY(-60%)
+  h2
+    text-transform: uppercase
+    text-align: center
+    font-size: 32px
+    margin-bottom: 20px
+.odd 
+  width: 103%
+  text-align: end
+  padding-right: 64%
+  img
+    right: 48%
+    transform: translate(-50% 50%)
+    left: auto
+
+/* секция сервиса */
+
+.services 
+  min-height: 600px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media"
