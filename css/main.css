@@ -22,10 +22,8 @@
   -o-transition: all 0.6s;
   transition: all 0.6s; }
 
-body {
-  overflow-x: hidden; }
-
 body, html {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   width: auto;
@@ -420,14 +418,164 @@ h1, h2, h3, h4, h5 {
     left: auto; }
 
 /* секция сервиса */
+.serv {
+  position: relative; }
+  .serv:after {
+    width: 150%;
+    height: 800px;
+    position: absolute;
+    bottom: -200px;
+    left: -150px;
+    content: '';
+    -webkit-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+    background-color: #005e9c;
+    z-index: 0; }
+
 .services {
-  min-height: 600px; }
+  z-index: 2;
+  min-height: 600px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 50px 0;
+  position: relative; }
+  .services button {
+    margin: auto;
+    margin-top: 50px; }
+  .services-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-basis: 48%;
+        -ms-flex-preferred-size: 48%;
+            flex-basis: 48%;
+    margin: 10px;
+    min-height: 300px;
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    cursor: pointer;
+    position: relative; }
+    .services-item button {
+      position: absolute;
+      z-index: 1;
+      padding: 15px;
+      width: 200px;
+      font-size: 16px;
+      margin-left: 20px;
+      bottom: 20px; }
+    .services-item h3 {
+      margin-top: 50px;
+      width: 50%;
+      z-index: 1;
+      padding: 0;
+      margin-left: 30px;
+      margin-bottom: 10px; }
+    .services-item span {
+      z-index: 1;
+      width: 50%;
+      margin-left: 30px; }
+    .services-item_overlay {
+      position: absolute;
+      left: -80px;
+      width: 70%;
+      height: 100%;
+      z-index: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      -webkit-transform: skewX(-25deg);
+          -ms-transform: skewX(-25deg);
+              transform: skewX(-25deg); }
+    .services-item:first-child {
+      background-image: url(../img/services/serv1.png);
+      background-repeat: no-repeat;
+      -webkit-background-size: 110% 110%;
+              background-size: 110%;
+      background-position: -10px -20px; }
+    .services-item:nth-child(2) {
+      background-image: url(../img/services/serv2.png);
+      background-repeat: no-repeat;
+      -webkit-background-size: 110% 110%;
+              background-size: 110%;
+      background-position: -10px -20px; }
+    .services-item:nth-child(3) {
+      background-image: url(../img/services/serv3.png);
+      background-repeat: no-repeat;
+      -webkit-background-size: 110% 110%;
+              background-size: 110%;
+      background-position: -10px -20px; }
+    .services-item:nth-child(4) {
+      background-image: url(../img/services/serv4.png);
+      background-repeat: no-repeat;
+      -webkit-background-size: 110% 110%;
+              background-size: 110%;
+      background-position: -10px -20px; }
+    .services-item:nth-child(5) {
+      background-image: url(../img/services/serv5.png);
+      background-repeat: no-repeat;
+      -webkit-background-size: 110% 110%;
+              background-size: 110%;
+      background-position: -10px -20px; }
+    .services-item:nth-child(6) {
+      background-image: url(../img/services/serv6.png);
+      background-repeat: no-repeat;
+      -webkit-background-size: 110% 110%;
+              background-size: 110%;
+      background-position: -10px -20px; }
+
+/* секция приемущества */
+.features {
+  min-height: 600px;
+  background-color: #005e9c; }
 
 @media (max-width: 1450px) {
   .top-car {
     height: 100px; } }
 
 @media (max-width: 1199px) {
+  .services-item {
+    -webkit-flex-basis: 47%;
+        -ms-flex-preferred-size: 47%;
+            flex-basis: 47%; }
+    .services-item_overlay {
+      width: 90%; }
+    .services-item:first-child {
+      -webkit-background-size: 140% 140%;
+              background-size: 140%; }
+    .services-item:nth-child(2) {
+      -webkit-background-size: 140% 140%;
+              background-size: 140%; }
+    .services-item:nth-child(3) {
+      -webkit-background-size: 140% 140%;
+              background-size: 140%; }
+    .services-item:nth-child(4) {
+      -webkit-background-size: 140% 140%;
+              background-size: 140%; }
+    .services-item:nth-child(5) {
+      -webkit-background-size: 140% 140%;
+              background-size: 140%; }
+    .services-item:nth-child(6) {
+      -webkit-background-size: 140% 140%;
+              background-size: 140%; }
   .content-in-img img {
     left: -120px; }
   .odd {
@@ -442,6 +590,15 @@ h1, h2, h3, h4, h5 {
       left: auto; } }
 
 @media (max-width: 992px) {
+  .services {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .services-item {
+      -webkit-flex-basis: 70%;
+          -ms-flex-preferred-size: 70%;
+              flex-basis: 70%; }
   .odd {
     width: 100%;
     padding-right: 65%;
@@ -462,6 +619,10 @@ h1, h2, h3, h4, h5 {
     margin-left: 90px; } }
 
 @media (max-width: 768px) {
+  .services-item {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; }
   .content h2 {
     font-size: 32px; }
   .content-in {
@@ -571,9 +732,51 @@ h1, h2, h3, h4, h5 {
     width: 300px; } }
 
 @media (max-width: 450px) {
+  .services-item:first-child {
+    -webkit-background-size: 180% 180%;
+            background-size: 180%; }
+  .services-item:nth-child(2) {
+    -webkit-background-size: 180% 180%;
+            background-size: 180%; }
+  .services-item:nth-child(3) {
+    -webkit-background-size: 180% 180%;
+            background-size: 180%; }
+  .services-item:nth-child(4) {
+    -webkit-background-size: 180% 180%;
+            background-size: 180%; }
+  .services-item:nth-child(5) {
+    -webkit-background-size: 180% 180%;
+            background-size: 180%; }
+  .services-item:nth-child(6) {
+    -webkit-background-size: 180% 180%;
+            background-size: 180%; }
+  .services-item_overlay {
+    width: 105%; }
   .content h2 {
     font-size: 24px; }
   .content-in {
     margin: auto; }
     .content-in-img {
       font-size: 16px; } }
+
+@media (max-width: 365px) {
+  .services-item:first-child {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%; }
+  .services-item:nth-child(2) {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%; }
+  .services-item:nth-child(3) {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%; }
+  .services-item:nth-child(4) {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%; }
+  .services-item:nth-child(5) {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%; }
+  .services-item:nth-child(6) {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%; }
+  .services-item_overlay {
+    width: 125%; } }

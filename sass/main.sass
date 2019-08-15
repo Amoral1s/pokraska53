@@ -210,9 +210,106 @@
     left: auto
 
 /* секция сервиса */
-
+.serv
+  position: relative
+  &:after
+    width: 150%
+    height: 800px
+    position: absolute
+    bottom: -200px
+    left: -150px
+    content: ''
+    transform: rotate(-10deg)
+    background-color: $main
+    z-index: 0
 .services 
+  z-index: 2
   min-height: 600px
+  display: flex
+  flex-wrap: wrap
+  padding: 50px 0
+  position: relative
+  
+  button
+    margin: auto
+    margin-top: 50px
+
+  &-item
+    display: flex
+    flex-basis: 48%
+    margin: 10px
+    min-height: 300px
+    background-color: #000
+    position: relative
+    overflow: hidden
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    cursor: pointer
+    position: relative
+    button
+      position: absolute
+      z-index: 1
+      padding: 15px
+      width: 200px
+      font-size: 16px
+      margin-left: 20px
+      bottom: 20px
+    h3
+      margin-top: 50px
+      width: 50%
+      z-index: 1
+      padding: 0
+      margin-left: 30px
+      margin-bottom: 10px
+    span
+      z-index: 1
+      width: 50%
+      margin-left: 30px
+    &_overlay
+      position: absolute
+      left: -80px
+      width: 70%
+      height: 100%
+      z-index: 0
+      background-color: rgba(0,0,0,0.5)
+      transform: skewX(-25deg)
+    &:first-child
+      background-image: url(../img/services/serv1.png)
+      background-repeat: no-repeat
+      background-size: 110%
+      background-position: -10px -20px
+    &:nth-child(2)
+      background-image: url(../img/services/serv2.png)
+      background-repeat: no-repeat
+      background-size: 110% 
+      background-position: -10px -20px
+    &:nth-child(3)
+      background-image: url(../img/services/serv3.png)
+      background-repeat: no-repeat
+      background-size: 110% 
+      background-position: -10px -20px
+    &:nth-child(4)
+      background-image: url(../img/services/serv4.png)
+      background-repeat: no-repeat
+      background-size: 110% 
+      background-position: -10px -20px
+    &:nth-child(5)
+      background-image: url(../img/services/serv5.png)
+      background-repeat: no-repeat
+      background-size: 110% 
+      background-position: -10px -20px
+    &:nth-child(6)
+      background-image: url(../img/services/serv6.png)
+      background-repeat: no-repeat
+      background-size: 110% 
+      background-position: -10px -20px
+      
+/* секция приемущества */
+
+.features
+  min-height: 600px
+  background-color: $main 
 
 
 

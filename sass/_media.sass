@@ -3,6 +3,23 @@
 		&-car
 			height: 100px
 @media (max-width: 1199px)
+	.services
+		&-item
+			flex-basis: 47%
+			&_overlay
+				width: 90%
+			&:first-child
+				background-size: 140%
+			&:nth-child(2)
+				background-size: 140% 
+			&:nth-child(3)
+				background-size: 140% 
+			&:nth-child(4)
+				background-size: 140% 
+			&:nth-child(5)
+				background-size: 140% 
+			&:nth-child(6)
+				background-size: 140% 
 	.content
 		&-in
 			&-img
@@ -17,6 +34,10 @@
 			transform: translate(-50% 50%)
 			left: auto
 @media (max-width: 992px)
+	.services
+		justify-content: center
+		&-item
+			flex-basis: 70%
 	.odd 
 		width: 100%
 		padding-right: 65%
@@ -34,6 +55,9 @@
 				border-radius: 50px
 				margin-left: 90px
 @media (max-width: 768px)
+	.services
+		&-item
+			flex-basis: 100%
 
 	.content
 		h2
@@ -139,6 +163,22 @@
 			input
 				width: 300px
 @media (max-width: 450px)
+	.services
+		&-item
+			&:first-child
+				background-size: 180% 
+			&:nth-child(2)
+				background-size: 180%  
+			&:nth-child(3)
+				background-size: 180%  
+			&:nth-child(4)
+				background-size: 180%  
+			&:nth-child(5)
+				background-size: 180%  
+			&:nth-child(6)
+				background-size: 180%  
+			&_overlay
+				width: 105%
 	.content
 		h2
 			font-size: 24px
@@ -146,3 +186,20 @@
 			margin: auto
 			&-img
 				font-size: 16px
+@media (max-width: 365px)
+	.services
+		&-item
+			&:first-child
+				background-size: 200% 
+			&:nth-child(2)
+				background-size: 200%  
+			&:nth-child(3)
+				background-size: 200%  
+			&:nth-child(4)
+				background-size: 200%  
+			&:nth-child(5)
+				background-size: 200%  
+			&:nth-child(6)
+				background-size: 200%  
+			&_overlay
+				width: 125%
