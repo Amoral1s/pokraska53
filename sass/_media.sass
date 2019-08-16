@@ -3,7 +3,10 @@
 		&-car
 			height: 100px
 @media (max-width: 1199px)
+	
 	.services
+		.serv_active
+			margin-left: 130px
 		&-item
 			flex-basis: 47%
 			&_overlay
@@ -163,7 +166,15 @@
 			input
 				width: 300px
 @media (max-width: 450px)
+	.serv
+  position: relative
+  &:after
+    width: 250%
+    
 	.services
+		.serv_active
+			margin-left: 20%
+			margin-bottom: 20px
 		&-item
 			&:first-child
 				background-size: 180% 
@@ -178,7 +189,7 @@
 			&:nth-child(6)
 				background-size: 180%  
 			&_overlay
-				width: 105%
+				width: 115%
 	.content
 		h2
 			font-size: 24px
@@ -188,6 +199,8 @@
 				font-size: 16px
 @media (max-width: 365px)
 	.services
+		.serv_active
+			margin-bottom: 10px
 		&-item
 			&:first-child
 				background-size: 200% 

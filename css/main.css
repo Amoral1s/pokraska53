@@ -101,10 +101,9 @@ h1, h2, h3, h4, h5 {
 .button {
   background-color: #eeda00;
   border: none;
-  width: 280px;
   -webkit-border-radius: 50px;
           border-radius: 50px;
-  padding: 25px 0 21px 0;
+  padding: 25px 50px 21px 50px;
   text-transform: uppercase;
   font-family: "MullerBold", sans-serif;
   font-size: 20px;
@@ -445,7 +444,7 @@ h1, h2, h3, h4, h5 {
           flex-wrap: wrap;
   padding: 50px 0;
   position: relative; }
-  .services button {
+  .services a {
     margin: auto;
     margin-top: 50px; }
   .services-item {
@@ -476,8 +475,9 @@ h1, h2, h3, h4, h5 {
             align-items: flex-start;
     cursor: pointer;
     position: relative; }
-    .services-item button {
+    .services-item a {
       position: absolute;
+      text-align: center;
       z-index: 1;
       padding: 15px;
       width: 200px;
@@ -541,6 +541,10 @@ h1, h2, h3, h4, h5 {
       -webkit-background-size: 110% 110%;
               background-size: 110%;
       background-position: -10px -20px; }
+  .services .serv_active {
+    margin-left: 190px;
+    padding: 20px;
+    margin-bottom: 40px; }
 
 /* секция приемущества */
 .features {
@@ -552,6 +556,8 @@ h1, h2, h3, h4, h5 {
     height: 100px; } }
 
 @media (max-width: 1199px) {
+  .services .serv_active {
+    margin-left: 130px; }
   .services-item {
     -webkit-flex-basis: 47%;
         -ms-flex-preferred-size: 47%;
@@ -732,6 +738,13 @@ h1, h2, h3, h4, h5 {
     width: 300px; } }
 
 @media (max-width: 450px) {
+  .serv {
+    position: relative; }
+    .serv:after {
+      width: 250%; }
+  .services .serv_active {
+    margin-left: 20%;
+    margin-bottom: 20px; }
   .services-item:first-child {
     -webkit-background-size: 180% 180%;
             background-size: 180%; }
@@ -751,7 +764,7 @@ h1, h2, h3, h4, h5 {
     -webkit-background-size: 180% 180%;
             background-size: 180%; }
   .services-item_overlay {
-    width: 105%; }
+    width: 115%; }
   .content h2 {
     font-size: 24px; }
   .content-in {
@@ -760,6 +773,8 @@ h1, h2, h3, h4, h5 {
       font-size: 16px; } }
 
 @media (max-width: 365px) {
+  .services .serv_active {
+    margin-bottom: 10px; }
   .services-item:first-child {
     -webkit-background-size: 200% 200%;
             background-size: 200%; }
