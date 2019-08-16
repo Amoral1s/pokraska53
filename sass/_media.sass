@@ -58,6 +58,16 @@
 				border-radius: 50px
 				margin-left: 90px
 @media (max-width: 768px)
+	.header-title-btn
+		display: flex
+		flex-direction: column
+	
+		button
+			width: 300px
+			margin: auto
+		a
+			width: 	300px
+			margin: auto
 	.services
 		&-item
 			flex-basis: 100%
@@ -98,19 +108,71 @@
 				margin: auto
 	.header
 		min-height: 400px
+		&-nav
+			height: 80px
+			&-link
+				a
+					font-size: 14px
+					&:first-child
+						&:after
+							height: 18px
+							width: 18px
+							left: -20px
+							top: -5px
+					&:last-child
+						font-size: 14px
+						&:after
+							height: 15px
+							width: 15px
+							left: -20px
+			&-wrap
+				img
+					height: 90px
 		&-title
-			min-height: 500px
+			min-height: 600px
 			&-btn
 				button
 					margin-bottom: 40px
 			&-text
 				font-size: 40px
+				align-items: center
 				strong
         	font-size: 30px
 				span
 					font-size: 16px
 					text-transform: none
+				strong
+					padding: 5px 0
+					padding-top: 10px
+				span
+					padding: 5px 0
+					
 @media (max-width: 578px)
+	.header
+		min-height: 400px
+		&-nav
+			height: 60px
+			&-link
+				a
+					font-size: 12px
+					&:first-child
+						&:after
+							height: 18px
+							width: 18px
+							left: -18px
+							top: -5px
+					&:last-child
+						font-size: 12px
+						&:after
+							height: 15px
+							width: 15px
+							left: -18px
+	.header
+		
+		&-nav
+			&-wrap
+				img
+					height: 70px
 	.content
 		h2
 			font-size: 28px

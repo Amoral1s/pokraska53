@@ -212,14 +212,15 @@
 /* секция сервиса */
 .serv
   position: relative
+  z-index: 1
   &:after
-    width: 150%
-    height: 800px
+    width: 250%
+    height: 600px
     position: absolute
-    bottom: -200px
+    bottom: -15px
     left: -150px
     content: ''
-    transform: rotate(-10deg)
+    transform: rotate(-3deg)
     background-color: $main
     z-index: 0
 .services 
@@ -227,7 +228,7 @@
   min-height: 600px
   display: flex
   flex-wrap: wrap
-  padding: 50px 0
+  padding-top: 50px
   position: relative
   a
     margin: auto
@@ -314,6 +315,11 @@
 .features
   min-height: 600px
   background-color: $main 
+  z-index: 9999999
+  color: #fff
+  padding-top: 100px
+  h3
+    text-align: center
 
 
 
